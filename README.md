@@ -12,99 +12,65 @@ Example research scrolls for [Scroll Press](https://github.com/leotrs/press). Th
 ## Structure
 
 ```
-.
-├── scrolls.json                    # Metadata for all example scrolls
+examples-press/
 ├── README.md                       # This file
-├── *.html                          # Built HTML outputs
-├── spectral_theorem.typ            # Typst source
-├── iris_analysis.qmd               # Quarto source
-├── damped_oscillators.rsm          # RSM source
-├── damped_oscillators.css          # RSM styling
-├── damped_oscillator_widget.html   # Pre-generated widget
-├── generate_damped_widget.py       # Widget generator script
-└── graph_traversal.ipynb           # Jupyter notebook source
+├── scrolls.json                    # Metadata for all examples
+│
+├── spectral-theorem/               # Typst + Pandoc example
+│   ├── README.md
+│   ├── spectral_theorem.typ
+│   └── spectral_theorem.html
+│
+├── iris-analysis/                  # Quarto example
+│   ├── README.md
+│   ├── iris_analysis.qmd
+│   └── iris_analysis.html
+│
+├── damped-oscillators/             # RSM example
+│   ├── README.md
+│   ├── damped_oscillators.rsm
+│   ├── damped_oscillators.css
+│   ├── damped_oscillator_widget.html
+│   ├── generate_damped_widget.py
+│   └── damped_oscillators.html
+│
+└── graph-traversal/                # Jupyter Notebook example
+    ├── README.md
+    ├── graph_traversal.ipynb
+    └── graph_traversal.html
 ```
 
-## Prerequisites
+## Examples
 
-Install the required tools:
+Each example is in its own directory with a dedicated README containing:
+- Overview of what the example demonstrates
+- Tools required and installation instructions
+- Exact build command to generate the HTML output
+- Explanation of the build process
 
-```bash
-# Pandoc (for Typst conversion)
-brew install pandoc
+### 1. [Spectral Theorem](spectral-theorem/) - Typst + Pandoc
 
-# Typst (for mathematical papers)
-brew install typst
+Mathematical paper with theorem-proof structures. Demonstrates how modern typesetting tools like Typst can produce web-native research documents.
 
-# Quarto (for data science notebooks)
-brew install quarto
+**[View build instructions →](spectral-theorem/README.md)**
 
-# RSM (for interactive research manuscripts)
-uv add rsm-markup==0.4.1
-```
+### 2. [Iris Analysis](iris-analysis/) - Quarto
 
-## Build Commands
+Interactive data science paper with Python code and Plotly visualizations. Shows how computational notebooks can become publishable research documents.
 
-### 1. Spectral Theorem (Typst → HTML via Pandoc)
+**[View build instructions →](iris-analysis/README.md)**
 
-```bash
-pandoc spectral_theorem.typ -s -o spectral_theorem.html --mathml
-```
+### 3. [Damped Oscillators](damped-oscillators/) - RSM
 
-**Source**: `spectral_theorem.typ`
-**Output**: `spectral_theorem.html`
-**Format**: Typst mathematical paper with theorem/proof environment
+Physics paper with embedded Bokeh simulation widget. Illustrates how interactive elements can enhance understanding of physical systems.
 
-### 2. Iris Analysis (Quarto)
+**[View build instructions →](damped-oscillators/README.md)**
 
-```bash
-quarto render iris_analysis.qmd
-```
+### 4. [Graph Traversal](graph-traversal/) - Jupyter Notebook
 
-**Source**: `iris_analysis.qmd`
-**Output**: `iris_analysis.html`
-**Format**: Quarto notebook with Python code, Plotly visualizations
-**Requirements**: Python packages (numpy, pandas, plotly, scikit-learn)
+Algorithms paper with executable code and visualizations. Demonstrates the Jupyter-to-HTML workflow for reproducible computational research.
 
-### 3. Damped Oscillators (RSM)
-
-```bash
-uv run rsm-build damped_oscillators.rsm --css damped_oscillators.css --standalone -o damped_oscillators
-```
-
-**Source**: `damped_oscillators.rsm`
-**Output**: `damped_oscillators.html`
-**Format**: RSM interactive manuscript with Bokeh widgets
-**Widget**: Pre-generated widget in `damped_oscillator_widget.html` (created by `generate_damped_widget.py`)
-
-### 4. Graph Traversal (Jupyter Notebook)
-
-```bash
-quarto render graph_traversal.ipynb --to html --embed-resources --standalone
-```
-
-**Source**: `graph_traversal.ipynb`
-**Output**: `graph_traversal.html`
-**Format**: Jupyter Notebook with executable Python code, algorithms, visualizations
-**Requirements**: Python with standard library (collections module)
-
-## Rebuild All
-
-To rebuild all seed papers:
-
-```bash
-# 1. Spectral Theorem
-pandoc spectral_theorem.typ -s -o spectral_theorem.html --mathml
-
-# 2. Iris Analysis (requires Python dependencies)
-quarto render iris_analysis.qmd
-
-# 3. Damped Oscillators
-uv run rsm-build damped_oscillators.rsm --css damped_oscillators.css --standalone -o damped_oscillators
-
-# 4. Graph Traversal
-quarto render graph_traversal.ipynb --to html --embed-resources --standalone
-```
+**[View build instructions →](graph-traversal/README.md)**
 
 ## Usage with Scroll Press
 
