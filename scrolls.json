@@ -1,7 +1,7 @@
 {
   "scrolls": [
     {
-      "file": "spectral-theorem/spectral_theorem.html",
+      "file": "typst/spectral_theorem.html",
       "title": "The Spectral Theorem for Symmetric Matrices",
       "authors": "Dr. Victor Frankenstein, Captain Nemo",
       "abstract": "The spectral theorem establishes that symmetric matrices can be diagonalized by orthogonal transformations. This fundamental result connects linear algebra with geometric intuition and enables applications from optimization to quantum mechanics. We present the theorem with proof and demonstrate its power through concrete examples.",
@@ -16,7 +16,7 @@
       "license": "cc-by-4.0"
     },
     {
-      "file": "iris-analysis/iris_analysis.html",
+      "file": "quarto/iris_analysis.html",
       "title": "Interactive Analysis of the Iris Dataset",
       "authors": "Sherlock Holmes, Alice Liddell",
       "abstract": "The Iris dataset is a classic multivariate dataset used for classification and visualization. This paper provides an interactive exploratory analysis using Python and Plotly, demonstrating species clustering through petal and sepal measurements. Interactive visualizations enable readers to explore the data patterns that make this dataset ideal for demonstrating machine learning classification algorithms.",
@@ -32,7 +32,7 @@
       "license": "cc-by-4.0"
     },
     {
-      "file": "damped-oscillators/damped_oscillators.html",
+      "file": "rsm/damped_oscillators.html",
       "title": "Damped Harmonic Oscillators: Three Characteristic Regimes",
       "authors": "Dr. Henry Jekyll, Elizabeth Bennet",
       "abstract": "The damped harmonic oscillator extends the simple harmonic oscillator by incorporating energy dissipation. This paper examines the three characteristic regimes—underdamped, critically damped, and overdamped—and demonstrates how the damping coefficient fundamentally determines system behavior. An interactive simulation enables exploration of parameter space, building intuition for this fundamental physical system.",
@@ -48,7 +48,7 @@
       "license": "cc-by-4.0"
     },
     {
-      "file": "graph-traversal/graph_traversal.html",
+      "file": "jupyter/graph_traversal.html",
       "title": "Graph Traversal Algorithms: BFS and DFS",
       "authors": "Dorothy Gale, Huckleberry Finn",
       "abstract": "Graph traversal algorithms systematically visit vertices in a graph. This paper examines the two fundamental approaches: Breadth-First Search (BFS) explores level-by-level, while Depth-First Search (DFS) explores as deep as possible before backtracking. Understanding their distinct characteristics is essential for selecting the appropriate algorithm for path-finding, connectivity analysis, and graph-based problem solving.",

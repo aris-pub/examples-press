@@ -13,9 +13,16 @@ This example demonstrates computational research documents that combine code, na
 
 ### Installation
 
+**macOS:**
 ```bash
 brew install quarto
 ```
+
+**Windows:**
+- Download the installer from [quarto.org/docs/get-started](https://quarto.org/docs/get-started/)
+
+**Linux:**
+- Download from [quarto.org/docs/get-started](https://quarto.org/docs/get-started/) or use your distribution's package manager
 
 Python dependencies are specified in the `.qmd` file and will be automatically managed by Quarto.
 

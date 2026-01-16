@@ -9,13 +9,22 @@ This example shows how to create mathematical research papers using Typst, a mod
 ## Tools Required
 
 - **Typst**: Modern typesetting system
-- **Pandoc**: Document converter
+- **Pandoc**: Document converter (used because Typst's native HTML support is experimental at the time of writing)
 
 ### Installation
 
+**macOS:**
 ```bash
 brew install typst pandoc
 ```
+
+**Windows:**
+- Typst: Download from [github.com/typst/typst/releases](https://github.com/typst/typst/releases) or use `winget install --id Typst.Typst`
+- Pandoc: Download from [pandoc.org/installing.html](https://pandoc.org/installing.html) or use `winget install --id JohnMacFarlane.Pandoc`
+
+**Linux:**
+- Typst: Download from [github.com/typst/typst/releases](https://github.com/typst/typst/releases) or install via package manager
+- Pandoc: `sudo apt install pandoc` (Debian/Ubuntu) or use your distribution's package manager
 
 ## Building
 

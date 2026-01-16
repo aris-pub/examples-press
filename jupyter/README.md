@@ -8,14 +8,21 @@ This example demonstrates how computational researchers can share executable cod
 
 ## Tools Required
 
-- **Quarto**: For converting Jupyter notebooks to HTML
+- **Quarto**: For converting Jupyter notebooks to HTML (we use Quarto instead of nbconvert because it provides better handling of embedded resources and automatically creates self-contained HTML files with proper flags)
 - **Python**: Standard library only (uses built-in collections module)
 
 ### Installation
 
+**macOS:**
 ```bash
 brew install quarto
 ```
+
+**Windows:**
+- Download the installer from [quarto.org/docs/get-started](https://quarto.org/docs/get-started/)
+
+**Linux:**
+- Download from [quarto.org/docs/get-started](https://quarto.org/docs/get-started/) or use your distribution's package manager
 
 No additional Python packages are required beyond the standard library.
 
