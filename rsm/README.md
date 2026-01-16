@@ -16,13 +16,9 @@ includes a Bokeh widget for parameter exploration.
 
 ### Installation
 
-The `uv` package manager works on macOS, Windows, and Linux. If you don't have `uv`
-installed, see
-[docs.astral.sh/uv/getting-started/installation](https://docs.astral.sh/uv/getting-started/installation/).
-
 **All platforms:**
 ```bash
-uv add rsm-markup==0.4.1
+pip install rsm-markup==0.4.1
 ```
 
 ## Building
