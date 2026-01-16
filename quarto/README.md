@@ -1,10 +1,13 @@
-# Iris Analysis Example
+# Quarto Example
 
-An interactive data science paper analyzing the classic Iris dataset using Python and Plotly visualizations, created with Quarto.
+An interactive data science paper analyzing the classic Iris dataset using Python and
+Plotly visualizations, created with Quarto.
 
 ## About This Example
 
-This example demonstrates computational research documents that combine code, narrative text, and interactive visualizations. The paper explores species clustering in the Iris dataset through petal and sepal measurements.
+This example demonstrates computational research documents that combine code, narrative
+text, and interactive visualizations. The paper explores species clustering in the Iris
+dataset through petal and sepal measurements.
 
 ## Tools Required
 
@@ -19,12 +22,15 @@ brew install quarto
 ```
 
 **Windows:**
-- Download the installer from [quarto.org/docs/get-started](https://quarto.org/docs/get-started/)
+- Download the installer from
+  [quarto.org/docs/get-started](https://quarto.org/docs/get-started/)
 
 **Linux:**
-- Download from [quarto.org/docs/get-started](https://quarto.org/docs/get-started/) or use your distribution's package manager
+- Download from [quarto.org/docs/get-started](https://quarto.org/docs/get-started/) or
+  use your distribution's package manager
 
-Python dependencies are specified in the `.qmd` file and will be automatically managed by Quarto.
+Python dependencies are specified in the `.qmd` file and will be automatically managed
+by Quarto.
 
 ## Building
 
@@ -48,4 +54,6 @@ quarto render iris_analysis.qmd
 
 ## Why This Matters
 
-Quarto enables reproducible research by combining analysis code with narrative explanation. The interactive visualizations allow readers to explore data patterns directly in the browser, making computational research more accessible and transparent.
+Quarto enables reproducible research by combining analysis code with narrative
+explanation. The interactive visualizations allow readers to explore data patterns
+directly in the browser, making computational research more accessible and transparent.

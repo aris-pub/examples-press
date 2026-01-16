@@ -1,15 +1,19 @@
-# Spectral Theorem Example
+# Typst Example
 
-A mathematical paper demonstrating the spectral theorem for symmetric matrices, written in Typst and converted to HTML.
+A mathematical paper demonstrating the spectral theorem for symmetric matrices, written
+in Typst and converted to HTML.
 
 ## About This Example
 
-This example shows how to create mathematical research papers using Typst, a modern typesetting system designed as an alternative to LaTeX. The paper includes theorem-proof structures, mathematical equations, and academic formatting.
+This example shows how to create mathematical research papers using Typst, a modern
+typesetting system designed as an alternative to LaTeX. The paper includes theorem-proof
+structures, mathematical equations, and academic formatting.
 
 ## Tools Required
 
 - **Typst**: Modern typesetting system
-- **Pandoc**: Document converter (used because Typst's native HTML support is experimental at the time of writing)
+- **Pandoc**: Document converter (used because Typst's native HTML support is
+  experimental at the time of writing)
 
 ### Installation
 
@@ -19,12 +23,18 @@ brew install typst pandoc
 ```
 
 **Windows:**
-- Typst: Download from [github.com/typst/typst/releases](https://github.com/typst/typst/releases) or use `winget install --id Typst.Typst`
-- Pandoc: Download from [pandoc.org/installing.html](https://pandoc.org/installing.html) or use `winget install --id JohnMacFarlane.Pandoc`
+- Typst: Download from
+  [github.com/typst/typst/releases](https://github.com/typst/typst/releases) or use
+  `winget install --id Typst.Typst`
+- Pandoc: Download from [pandoc.org/installing.html](https://pandoc.org/installing.html)
+  or use `winget install --id JohnMacFarlane.Pandoc`
 
 **Linux:**
-- Typst: Download from [github.com/typst/typst/releases](https://github.com/typst/typst/releases) or install via package manager
-- Pandoc: `sudo apt install pandoc` (Debian/Ubuntu) or use your distribution's package manager
+- Typst: Download from
+  [github.com/typst/typst/releases](https://github.com/typst/typst/releases) or install
+  via package manager
+- Pandoc: `sudo apt install pandoc` (Debian/Ubuntu) or use your distribution's package
+  manager
 
 ## Building
 
@@ -48,4 +58,6 @@ pandoc spectral_theorem.typ -s -o spectral_theorem.html --mathml
 
 ## Why This Matters
 
-Typst provides a cleaner, more modern syntax than LaTeX while maintaining similar mathematical typesetting capabilities. Converting to HTML makes the content web-native and accessible through platforms like Scroll Press.
+Typst provides a cleaner, more modern syntax than LaTeX while maintaining similar
+mathematical typesetting capabilities. Converting to HTML makes the content web-native
+and accessible through platforms like Scroll Press.
