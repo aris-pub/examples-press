@@ -29,8 +29,19 @@ brew install quarto
 - Download from [quarto.org/docs/get-started](https://quarto.org/docs/get-started/) or
   use your distribution's package manager
 
-Python dependencies are specified in the `.qmd` file and will be automatically managed
-by Quarto.
+**Python dependencies:**
+
+Install the required Python packages:
+
+```bash
+pip install numpy pandas plotly scikit-learn
+```
+
+Or with uv:
+
+```bash
+uv pip install numpy pandas plotly scikit-learn
+```
 
 ## Building
 
