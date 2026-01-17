@@ -18,7 +18,7 @@ includes a Bokeh widget for parameter exploration.
 
 **All platforms:**
 ```bash
-pip install rsm-markup==0.4.1
+pip install rsm
 ```
 
 ## Building
