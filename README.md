@@ -1,6 +1,8 @@
 # Examples Press
 
-Example research scrolls for [Scroll Press](https://github.com/leotrs/press).
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+Example research scrolls for [Scroll Press](https://github.com/aris-pub/press).
 
 ## About Scroll Press
 
