@@ -53,6 +53,52 @@ x(t) = A_1 e^{r_1 t} + A_2 e^{r_2 t} \quad \text{(overdamped, } \gamma > \omega_
 $$
 where $\omega_d = \sqrt{\omega_0^2 - \gamma^2}$ is the damped frequency and $r_{1,2}$ are negative real roots.
 
+## Energy Dissipation
+
+:theorem: {:label: energy-dissipation}
+  For a damped harmonic oscillator with $\gamma > 0$, the total mechanical energy
+  $$
+  E(t) = \frac{1}{2}m\left(\frac{dx}{dt}\right)^2 + \frac{1}{2}kx^2
+  $$
+  is strictly decreasing over time.
+::
+
+:proof:
+  :step:
+    Define the total mechanical energy as
+    $$
+    E(t) = \frac{1}{2}m\left(\frac{dx}{dt}\right)^2 + \frac{1}{2}kx^2.
+    $$
+  ::
+
+  :step:
+    Differentiate with respect to time:
+    $${:label:eqn}
+    \frac{dE}{dt} = m\frac{dx}{dt}\frac{d^2x}{dt^2} + kx\frac{dx}{dt}.
+    $$
+  ::
+
+  :step:
+    Substitute the equation of motion $\frac{d^2x}{dt^2} + 2\gamma\frac{dx}{dt} +
+    \omega_0^2 x = 0$ in :ref:eqn::.
+    $$
+    \frac{dE}{dt} = m\frac{dx}{dt}\left(-2\gamma\frac{dx}{dt} - \omega_0^2 x\right) + kx\frac{dx}{dt}.
+    $$
+  ::
+
+  :step:
+    Since $k = m\omega_0^2$, the terms involving $x$ cancel, leaving
+    $$
+    \frac{dE}{dt} = -2m\gamma\left(\frac{dx}{dt}\right)^2 \leq 0,
+    $$
+    with equality only when $\frac{dx}{dt} = 0$. :qed:
+  ::
+::
+
+:corollary: {:label: stability}
+  The equilibrium position $(x=0, v=0)$ is asymptotically stable for any positive damping coefficient.
+::
+
 ## Three Damping Regimes
 
 The underdamped regime (${:label:under, :types: hl}\gamma < \omega_0$) produces
@@ -73,11 +119,13 @@ damping. This behavior is common in highly viscous environments.
 The visualization below demonstrates all three regimes. Adjustable parameters include
 the natural frequency $\omega_0$ (oscillation rate without damping), damping coefficient
 $\gamma$ (energy dissipation strength), and initial conditions $x_0$ and $v_0$ (starting
-position and velocity). Watch the system transition from :ref:under,underdamped::
-(oscillatory) through :ref:crit, critically damped:: (optimal) to :ref:over,overdamped::
-(slow decay) as $\gamma$ increases past $\omega_0$. The simulation shows position vs.
-time with exponential envelope (underdamped case) and phase space trajectories
-converging to the origin.
+position and velocity). As predicted by :ref:energy-dissipation,Theorem 1::, energy
+continuously decreases for any positive damping. Watch the system transition from
+:ref:under,underdamped:: (oscillatory) through :ref:crit, critically damped:: (optimal)
+to :ref:over,overdamped:: (slow decay) as $\gamma$ increases past $\omega_0$. The
+simulation shows position vs. time with exponential envelope (underdamped case) and
+phase space trajectories converging to the origin, illustrating
+:ref:stability,the asymptotic stability:: established in Corollary 1.
 
 :html: {
   :path: damped_oscillator_widget.html
