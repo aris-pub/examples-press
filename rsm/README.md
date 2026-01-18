@@ -18,7 +18,7 @@ includes a Bokeh widget for parameter exploration.
 
 **All platforms:**
 ```bash
-pip install rsm
+pip install rsm-lang
 ```
 
 ## Building
@@ -26,7 +26,7 @@ pip install rsm
 To generate the HTML output from the RSM source:
 
 ```bash
-uv run rsm-build damped_oscillators.rsm --css damped_oscillators.css --standalone -o damped_oscillators
+uv run rsm build damped_oscillators.rsm --css damped_oscillators.css --standalone -o damped_oscillators
 ```
 
 ### What This Does
