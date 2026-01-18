@@ -12,11 +12,20 @@ includes a Bokeh widget for parameter exploration.
 ## Tools Required
 
 - **RSM**: Readable Science Markup language
-- **Python**: With rsm-markup package
 
 ### Installation
 
-**All platforms:**
+**Recommended: pipx (Isolated Global Install)**
+```bash
+pipx install rsm-lang
+```
+
+**Alternative: uvx (Zero Install, Run on Demand)**
+```bash
+uvx --from rsm-lang rsm build damped_oscillators.rsm --css damped_oscillators.css --standalone -o damped_oscillators
+```
+
+**Traditional: pip**
 ```bash
 pip install rsm-lang
 ```
