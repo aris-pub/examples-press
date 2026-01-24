@@ -22,7 +22,7 @@ pipx install rsm-lang
 
 **Alternative: uvx (Zero Install, Run on Demand)**
 ```bash
-uvx --from rsm-lang rsm build damped_oscillators.rsm --css damped_oscillators.css --standalone -o damped_oscillators
+uvx --from rsm-lang rsm build damped_oscillators.rsm --standalone
 ```
 
 **Traditional: pip**
@@ -35,7 +35,7 @@ pip install rsm-lang
 To generate the HTML output from the RSM source:
 
 ```bash
-uv run rsm build damped_oscillators.rsm --css damped_oscillators.css --standalone -o damped_oscillators
+uv run rsm build damped_oscillators.rsm --standalone
 ```
 
 ### What This Does
