@@ -22,7 +22,7 @@ critically damped, and overdamped—and demonstrates how the damping coefficient
 fundamentally determines system behavior. An interactive simulation enables exploration
 of parameter space, building intuition for this fundamental physical system.
 
-:paragraph: {:types: {press-note, small}} *Example scroll made with RSM Studio for
+:paragraph: {:class: {press-note, small}} *Example scroll made with RSM Studio for
 Scroll Press.*
 
 ::
@@ -101,16 +101,16 @@ where $\omega_d = \sqrt{\omega_0^2 - \gamma^2}$ is the damped frequency and $r_{
 
 ## Three Damping Regimes
 
-The underdamped regime (${:label:under, :types: hl}\gamma < \omega_0$) produces
+The underdamped regime (${:label:under, :class: hl}\gamma < \omega_0$) produces
 oscillations with exponentially decaying amplitude $Ae^{-\gamma t}$. Energy decays as
 $E(t) \propto e^{-2\gamma t}$. This behavior is common in mechanical systems where
 oscillation before settling is acceptable.
 
-Critical damping (${:label:crit, :types: hl}\gamma = \omega_0$) represents the boundary
+Critical damping (${:label:crit, :class: hl}\gamma = \omega_0$) represents the boundary
 case, returning to equilibrium in minimum time without overshooting. This regime is
 optimal for shock absorbers and door closers.
 
-The overdamped regime (${:label:over, :types: hl}\gamma > \omega_0$) causes the system
+The overdamped regime (${:label:over, :class: hl}\gamma > \omega_0$) causes the system
 to slowly creep to equilibrium without oscillating. Return is slower than critical
 damping. This behavior is common in highly viscous environments.
 
@@ -173,5 +173,5 @@ essential for applications from mechanical design to signal processing.
 
 ::
 
-:paragraph: {:types: {press-note, small}} *Example scroll made with RSM Studio for
+:paragraph: {:class: {press-note, small}} *Example scroll made with RSM Studio for
 Scroll Press.*

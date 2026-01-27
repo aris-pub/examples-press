@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -1053,7 +1054,6 @@ var RSM = (() => {
   <script>
     window.addEventListener('load', function() { RSM.onload(null, {keys: false}); });
   </script>
-
   <script>
     // Dark mode toggle with localStorage and system preference detection
     (function() {
@@ -1072,12 +1072,13 @@ var RSM = (() => {
     }
   </script>
 
+
   <title>Damped Harmonic Oscillators</title>
 </head>
 
 <body>
 
-<button class="dark-mode-toggle" onclick="toggleDarkMode()" aria-label="Toggle dark mode">
+<button class="rsm-theme-toggle" aria-label="Toggle dark mode">
   <svg class="light-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <circle cx="12" cy="12" r="4"></circle>
     <path d="M12 2v2"></path>
@@ -1120,7 +1121,7 @@ critically damped, and overdamped—and demonstrates how the damping coefficient
 fundamentally determines system behavior. An interactive simulation enables exploration
 of parameter space, building intuition for this fundamental physical system.
 
-:paragraph: {:types: {press-note, small}} *Example scroll made with RSM Studio for
+:paragraph: {:class: {press-note, small}} *Example scroll made with RSM Studio for
 Scroll Press.*
 
 ::
@@ -1199,16 +1200,16 @@ where $\omega_d = \sqrt{\omega_0^2 - \gamma^2}$ is the damped frequency and $r_{
 
 ## Three Damping Regimes
 
-The underdamped regime (${:label:under, :types: hl}\gamma < \omega_0$) produces
+The underdamped regime (${:label:under, :class: hl}\gamma < \omega_0$) produces
 oscillations with exponentially decaying amplitude $Ae^{-\gamma t}$. Energy decays as
 $E(t) \propto e^{-2\gamma t}$. This behavior is common in mechanical systems where
 oscillation before settling is acceptable.
 
-Critical damping (${:label:crit, :types: hl}\gamma = \omega_0$) represents the boundary
+Critical damping (${:label:crit, :class: hl}\gamma = \omega_0$) represents the boundary
 case, returning to equilibrium in minimum time without overshooting. This regime is
 optimal for shock absorbers and door closers.
 
-The overdamped regime (${:label:over, :types: hl}\gamma > \omega_0$) causes the system
+The overdamped regime (${:label:over, :class: hl}\gamma > \omega_0$) causes the system
 to slowly creep to equilibrium without oscillating. Return is slower than critical
 damping. This behavior is common in highly viscous environments.
 
@@ -1271,7 +1272,7 @@ essential for applications from mechanical design to signal processing.
 
 ::
 
-:paragraph: {:types: {press-note, small}} *Example scroll made with RSM Studio for
+:paragraph: {:class: {press-note, small}} *Example scroll made with RSM Studio for
 Scroll Press.*
 </div>
 <div class="manuscript" data-nodeid="0">
@@ -1302,7 +1303,7 @@ critically damped, and overdamped—and demonstrates how the damping coefficient
 fundamentally determines system behavior. An interactive simulation enables exploration
 of parameter space, building intuition for this fundamental physical system.
 
-:paragraph: {:types: {press-note, small}} *Example scroll made with RSM Studio for
+:paragraph: {:class: {press-note, small}} *Example scroll made with RSM Studio for
 Scroll Press.*
 
 ::
@@ -1381,16 +1382,16 @@ where $\omega_d = \sqrt{\omega_0^2 - \gamma^2}$ is the damped frequency and $r_{
 
 ## Three Damping Regimes
 
-The underdamped regime (${:label:under, :types: hl}\gamma &lt; \omega_0$) produces
+The underdamped regime (${:label:under, :class: hl}\gamma &lt; \omega_0$) produces
 oscillations with exponentially decaying amplitude $Ae^{-\gamma t}$. Energy decays as
 $E(t) \propto e^{-2\gamma t}$. This behavior is common in mechanical systems where
 oscillation before settling is acceptable.
 
-Critical damping (${:label:crit, :types: hl}\gamma = \omega_0$) represents the boundary
+Critical damping (${:label:crit, :class: hl}\gamma = \omega_0$) represents the boundary
 case, returning to equilibrium in minimum time without overshooting. This regime is
 optimal for shock absorbers and door closers.
 
-The overdamped regime (${:label:over, :types: hl}\gamma &gt; \omega_0$) causes the system
+The overdamped regime (${:label:over, :class: hl}\gamma &gt; \omega_0$) causes the system
 to slowly creep to equilibrium without oscillating. Return is slower than critical
 damping. This behavior is common in highly viscous environments.
 
@@ -1453,7 +1454,7 @@ essential for applications from mechanical design to signal processing.
 
 ::
 
-:paragraph: {:types: {press-note, small}} *Example scroll made with RSM Studio for
+:paragraph: {:class: {press-note, small}} *Example scroll made with RSM Studio for
 Scroll Press.*
 " tabindex=0>
 
@@ -1661,7 +1662,7 @@ critically damped, and overdamped—and demonstrates how the damping coefficient
 fundamentally determines system behavior. An interactive simulation enables exploration
 of parameter space, building intuition for this fundamental physical system.
 
-:paragraph: {:types: {press-note, small}} *Example scroll made with RSM Studio for
+:paragraph: {:class: {press-note, small}} *Example scroll made with RSM Studio for
 Scroll Press.*
 
 ::" tabindex=0>
@@ -1792,7 +1793,7 @@ of parameter space, building intuition for this fundamental physical system.
 
 </div>
 
-<div class="paragraph press-note small hr hr-hidden" data-rsm-source=":paragraph: {:types: {press-note, small}} *Example scroll made with RSM Studio for
+<div class="paragraph press-note small hr hr-hidden" data-rsm-source=":paragraph: {:class: {press-note, small}} *Example scroll made with RSM Studio for
 Scroll Press.*
 " tabindex=0 data-nodeid="6">
 
@@ -3869,16 +3870,16 @@ $$
 
 <div class="heading hr" data-rsm-source="## Three Damping Regimes
 
-The underdamped regime (${:label:under, :types: hl}\gamma &lt; \omega_0$) produces
+The underdamped regime (${:label:under, :class: hl}\gamma &lt; \omega_0$) produces
 oscillations with exponentially decaying amplitude $Ae^{-\gamma t}$. Energy decays as
 $E(t) \propto e^{-2\gamma t}$. This behavior is common in mechanical systems where
 oscillation before settling is acceptable.
 
-Critical damping (${:label:crit, :types: hl}\gamma = \omega_0$) represents the boundary
+Critical damping (${:label:crit, :class: hl}\gamma = \omega_0$) represents the boundary
 case, returning to equilibrium in minimum time without overshooting. This regime is
 optimal for shock absorbers and door closers.
 
-The overdamped regime (${:label:over, :types: hl}\gamma &gt; \omega_0$) causes the system
+The overdamped regime (${:label:over, :class: hl}\gamma &gt; \omega_0$) causes the system
 to slowly creep to equilibrium without oscillating. Return is slower than critical
 damping. This behavior is common in highly viscous environments.
 " tabindex=0>
@@ -3945,7 +3946,7 @@ damping. This behavior is common in highly viscous environments.
 
 </div>
 
-<div class="paragraph hr hr-hidden" data-rsm-source="The underdamped regime (${:label:under, :types: hl}\gamma &lt; \omega_0$) produces
+<div class="paragraph hr hr-hidden" data-rsm-source="The underdamped regime (${:label:under, :class: hl}\gamma &lt; \omega_0$) produces
 oscillations with exponentially decaying amplitude $Ae^{-\gamma t}$. Energy decays as
 $E(t) \propto e^{-2\gamma t}$. This behavior is common in mechanical systems where
 oscillation before settling is acceptable.
@@ -4010,7 +4011,7 @@ oscillation before settling is acceptable.
 
 </div>
 
-<div class="paragraph hr hr-hidden" data-rsm-source="Critical damping (${:label:crit, :types: hl}\gamma = \omega_0$) represents the boundary
+<div class="paragraph hr hr-hidden" data-rsm-source="Critical damping (${:label:crit, :class: hl}\gamma = \omega_0$) represents the boundary
 case, returning to equilibrium in minimum time without overshooting. This regime is
 optimal for shock absorbers and door closers.
 " tabindex=0 data-nodeid="120">
@@ -4072,7 +4073,7 @@ optimal for shock absorbers and door closers.
 
 </div>
 
-<div class="paragraph hr hr-hidden" data-rsm-source="The overdamped regime (${:label:over, :types: hl}\gamma &gt; \omega_0$) causes the system
+<div class="paragraph hr hr-hidden" data-rsm-source="The overdamped regime (${:label:over, :class: hl}\gamma &gt; \omega_0$) causes the system
 to slowly creep to equilibrium without oscillating. Return is slower than critical
 damping. This behavior is common in highly viscous environments.
 " tabindex=0 data-nodeid="125">
@@ -4547,7 +4548,7 @@ function _(t,e,s,_,r){_();const i=t(84),h=t(8),a=t(12);class n{constructor(){thi
 function _(e,n,t,s,c){s();const o=e(5),i=e(84),_=e(20);class r{constructor(e,n){this._document_listener=e=>{this._document_changed(e)},this._connection=e,this.document=n,this.document.on_change(this._document_listener,!0)}get id(){return this._connection.id}handle(e){const n=e.msgtype();switch(n){case"PATCH-DOC":this._handle_patch(e);break;case"OK":this._handle_ok(e);break;case"ERROR":this._handle_error(e);break;default:_.logger.debug(`Doing nothing with message '${n}'`)}}close(){this._connection.close()}_connection_closed(){this.document.remove_on_change(this._document_listener)}async request_server_info(){const e=i.Message.create("SERVER-INFO-REQ",{},{});return(await this._connection.send_with_reply(e)).content}async force_roundtrip(){await this.request_server_info()}_document_changed(e){const n=(e instanceof o.DocumentEventBatch?e.sync?e.events:[]:[e]).filter((e=>e.sync));if(0==n.length)return;const t=this.document.create_json_patch(n),s=i.Message.create("PATCH-DOC",{},t);this._connection.send(s)}_handle_patch(e){this.document.apply_json_patch(e.content,e.buffers)}_handle_ok(e){_.logger.trace(`Unhandled OK reply to ${e.reqid()}`)}_handle_error(e){_.logger.error(`Unhandled ERROR reply to ${e.reqid()}: ${e.content.text}`)}}t.ClientSession=r,r.__name__="ClientSession"},
 function _(n,e,o,t,r){t(),o._resolve_element=function(n){const{elementid:e}=n;return null!=e?s(e):document.body},o._resolve_root_elements=function(n){const e=[];if(null!=n.root_ids&&null!=n.roots)for(const o of n.root_ids)e.push(s(n.roots[o]));return e};const i=n(61),l=n(8);function s(n){let e=(0,l.isString)(n)?document.getElementById(n):n;if(null==e)throw new Error(`Error rendering Bokeh model: could not find ${(0,l.isString)(n)?`#${n}`:n} HTML tag`);if(!(0,i.contains)(document.body,e))throw new Error(`Error rendering Bokeh model: element ${(0,l.isString)(n)?`#${n}`:n} must be under <body>
 
-<button class="dark-mode-toggle" onclick="toggleDarkMode()" aria-label="Toggle dark mode">
+<button class="rsm-theme-toggle" aria-label="Toggle dark mode">
   <svg class="light-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <circle cx="12" cy="12" r="4"></circle>
     <path d="M12 2v2"></path>
@@ -6379,7 +6380,7 @@ essential for applications from mechanical design to signal processing.
 
 </section>
 
-<div class="paragraph press-note small hr hr-hidden" data-rsm-source=":paragraph: {:types: {press-note, small}} *Example scroll made with RSM Studio for
+<div class="paragraph press-note small hr hr-hidden" data-rsm-source=":paragraph: {:class: {press-note, small}} *Example scroll made with RSM Studio for
 Scroll Press.*
 " tabindex=0 data-nodeid="199">
 
