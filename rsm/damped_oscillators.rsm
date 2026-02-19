@@ -1,6 +1,8 @@
-# Damped Harmonic Oscillators {
-  :date: 2025-01-05
-}
+# Damped Harmonic Oscillators
+
+:config: {
+  :override-date: 2025-01-05
+} ::
 
 :author: {
   :name: Dr. Henry Jekyll
