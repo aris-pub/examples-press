@@ -12,26 +12,49 @@ self-contained HTML files that can include interactive visualizations, executabl
 and dynamic elements. This enables researchers to share richer, more engaging scientific
 communication.
 
-This repository demonstrates how to use popular authoring tools to generate the single
-self-contained HTML files that Press requires. Each example shows a complete workflow
-from source document to publishable HTML output.
+This repository demonstrates how to use popular authoring tools to generate HTML for
+Press. You can upload a single self-contained HTML file, or a zip archive with your HTML
+and its assets (stylesheets, scripts, images, data files).
 
 ## Examples
 
+### Single HTML File
+
 1. **Typst** - Mathematical paper with Pandoc conversion
-2. **Quarto** - Interactive data science with Python
+2. **Quarto** - Interactive data science with Python (self-contained)
 3. **RSM** - Physics paper with embedded widget
 4. **Jupyter** - Algorithms paper from Jupyter Notebook
+
+### Zip Archive
+
+5. **zip-simple** - Paper with separate CSS, JS, and SVG image
+6. **zip-quarto-style** - Quarto-style output with `_files/` directory structure
 
 Each example is in its own directory with a dedicated README containing:
 - Overview of what the example demonstrates
 - Tools required and installation instructions
-- Exact build command to generate the HTML output
-- Explanation of the build process
+- Exact build command to generate the output
+- How to upload (single file or zip)
+
+## Uploading a Zip
+
+If your paper has external assets (images, CSS, JavaScript, data files), put everything
+in a folder and zip it:
+
+```bash
+cd my-paper-folder
+zip -r ../my-paper.zip .
+```
+
+Upload the zip on Press. The entry point HTML file is auto-detected. If there are
+multiple HTML files, you can select the correct one.
+
+**Allowed file types:** HTML, CSS, JavaScript, images (PNG, JPG, GIF, WebP, SVG), fonts
+(WOFF, WOFF2, TTF, OTF), and data files (JSON, CSV, TSV, TXT). Maximum 50MB.
 
 ## Notes
 
-- All HTML outputs are self-contained with embedded CSS/JavaScript
-- Papers use different authoring tools to demonstrate Scroll Press's format flexibility
+- Single HTML uploads work as before -- all CSS/JS inlined in one file
+- Zip uploads preserve directory structure and relative paths
+- Papers use different authoring tools to demonstrate Press's format flexibility
 - Widget-based papers (RSM, Quarto) may require additional build steps for interactive elements
-- Jupyter notebook demonstrates computational research workflow with executable code

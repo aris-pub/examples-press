@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300" width="500" height="300">
+  <!-- Background -->
+  <rect width="500" height="300" fill="#fff"/>
+
+  <!-- Plot area -->
+  <g transform="translate(60,20)">
+    <!-- Grid lines -->
+    <line x1="0" y1="0" x2="0" y2="240" stroke="#ccc" stroke-width="1"/>
+    <line x1="0" y1="240" x2="400" y2="240" stroke="#ccc" stroke-width="1"/>
+    <line x1="0" y1="180" x2="400" y2="180" stroke="#eee" stroke-width="0.5"/>
+    <line x1="0" y1="120" x2="400" y2="120" stroke="#eee" stroke-width="0.5"/>
+    <line x1="0" y1="60" x2="400" y2="60" stroke="#eee" stroke-width="0.5"/>
+    <line x1="0" y1="0" x2="400" y2="0" stroke="#eee" stroke-width="0.5"/>
+
+    <!-- Y-axis labels -->
+    <text x="-10" y="244" text-anchor="end" font-size="10" fill="#555">0</text>
+    <text x="-10" y="184" text-anchor="end" font-size="10" fill="#555">100</text>
+    <text x="-10" y="124" text-anchor="end" font-size="10" fill="#555">200</text>
+    <text x="-10" y="64" text-anchor="end" font-size="10" fill="#555">300</text>
+    <text x="-10" y="4" text-anchor="end" font-size="10" fill="#555">400</text>
+
+    <!-- X-axis labels -->
+    <text x="0" y="258" text-anchor="middle" font-size="10" fill="#555">0</text>
+    <text x="100" y="258" text-anchor="middle" font-size="10" fill="#555">25</text>
+    <text x="200" y="258" text-anchor="middle" font-size="10" fill="#555">50</text>
+    <text x="300" y="258" text-anchor="middle" font-size="10" fill="#555">75</text>
+    <text x="400" y="258" text-anchor="middle" font-size="10" fill="#555">100</text>
+
+    <!-- Axis titles -->
+    <text x="200" y="280" text-anchor="middle" font-size="11" fill="#333">Ni fraction (at.%)</text>
+    <text x="-45" y="120" text-anchor="middle" font-size="11" fill="#333" transform="rotate(-90,-45,120)">k (W/m K)</text>
+
+    <!-- Data points with error bars (Cu-Ni conductivity curve) -->
+    <!-- Pure Cu: ~400 W/mK -->
+    <line x1="0" y1="3" x2="0" y2="9" stroke="#555" stroke-width="1"/>
+    <circle cx="0" cy="6" r="4" fill="#2563eb"/>
+    <!-- 10% Ni: ~120 -->
+    <line x1="40" y1="165" x2="40" y2="177" stroke="#555" stroke-width="1"/>
+    <circle cx="40" cy="171" r="4" fill="#2563eb"/>
+    <!-- 20% Ni: ~50 -->
+    <line x1="80" y1="207" x2="80" y2="219" stroke="#555" stroke-width="1"/>
+    <circle cx="80" cy="213" r="4" fill="#2563eb"/>
+    <!-- 30% Ni: ~30 -->
+    <line x1="120" y1="219" x2="120" y2="231" stroke="#555" stroke-width="1"/>
+    <circle cx="120" cy="225" r="4" fill="#2563eb"/>
+    <!-- 40% Ni: ~22 -->
+    <line x1="160" y1="224" x2="160" y2="236" stroke="#555" stroke-width="1"/>
+    <circle cx="160" cy="230" r="4" fill="#2563eb"/>
+    <!-- 50% Ni: ~20 (minimum) -->
+    <line x1="200" y1="226" x2="200" y2="238" stroke="#555" stroke-width="1"/>
+    <circle cx="200" cy="232" r="4" fill="#dc2626"/>
+    <!-- 60% Ni: ~23 -->
+    <line x1="240" y1="223" x2="240" y2="235" stroke="#555" stroke-width="1"/>
+    <circle cx="240" cy="229" r="4" fill="#2563eb"/>
+    <!-- 70% Ni: ~35 -->
+    <line x1="280" y1="216" x2="280" y2="228" stroke="#555" stroke-width="1"/>
+    <circle cx="280" cy="222" r="4" fill="#2563eb"/>
+    <!-- 80% Ni: ~55 -->
+    <line x1="320" y1="204" x2="320" y2="216" stroke="#555" stroke-width="1"/>
+    <circle cx="320" cy="210" r="4" fill="#2563eb"/>
+    <!-- 90% Ni: ~70 -->
+    <line x1="360" y1="195" x2="360" y2="207" stroke="#555" stroke-width="1"/>
+    <circle cx="360" cy="201" r="4" fill="#2563eb"/>
+    <!-- Pure Ni: ~91 W/mK -->
+    <line x1="400" y1="100" x2="400" y2="112" stroke="#555" stroke-width="1"/>
+    <circle cx="400" cy="106" r="4" fill="#2563eb"/>
+
+    <!-- Fit curve (smooth path through data) -->
+    <path d="M0,6 C20,80 40,150 80,213 C100,225 140,230 200,232 C260,230 300,222 320,210 C360,180 380,140 400,106"
+          fill="none" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.6"/>
+  </g>
+</svg>

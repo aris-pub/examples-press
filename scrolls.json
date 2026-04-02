@@ -62,6 +62,39 @@
       "user": "John Smith",
       "subject": "Computer Science",
       "license": "cc-by-4.0"
+    },
+    {
+      "file": "zip-simple",
+      "title": "Prime Number Distribution in Arithmetic Progressions",
+      "authors": "Jay Gatsby, Ishmael Queequeg",
+      "abstract": "We examine the distribution of prime numbers within arithmetic progressions, building on Dirichlet's theorem to visualize how primes spread across residue classes. Using elementary computational methods, we demonstrate the equidistribution phenomenon for small moduli and present visual evidence supporting the prime number theorem for arithmetic progressions.",
+      "keywords": [
+        "mathematics",
+        "number theory",
+        "prime numbers",
+        "zip upload"
+      ],
+      "user": "Pavel Kowalski",
+      "subject": "Mathematics",
+      "license": "cc-by-4.0",
+      "format": "zip"
+    },
+    {
+      "file": "zip-quarto-style",
+      "title": "Thermal Conductivity of Binary Alloys",
+      "authors": "Atticus Finch, Jane Eyre",
+      "abstract": "We present measurements of thermal conductivity across a range of copper-nickel binary alloys at room temperature. The data reveal the characteristic minimum in conductivity at intermediate compositions, consistent with Nordheim's rule for solid-solution scattering.",
+      "keywords": [
+        "materials science",
+        "thermal conductivity",
+        "alloys",
+        "zip upload",
+        "Quarto"
+      ],
+      "user": "Anita Patel",
+      "subject": "Physics",
+      "license": "cc-by-4.0",
+      "format": "zip"
     }
   ]
 }

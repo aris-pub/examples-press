@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number Distribution in Arithmetic Progressions</title>
+    <link rel="stylesheet" href="styles/paper.css">
+</head>
+<body>
+    <header>
+        <h1>Prime Number Distribution in Arithmetic Progressions</h1>
+        <div class="authors">Jay Gatsby, Ishmael Queequeg</div>
+        <div class="abstract">
+            <h2>Abstract</h2>
+            <p>We examine the distribution of prime numbers within arithmetic progressions,
+            building on Dirichlet's theorem to visualize how primes spread across residue classes.
+            Using elementary computational methods, we demonstrate the equidistribution phenomenon
+            for small moduli and present visual evidence supporting the prime number theorem
+            for arithmetic progressions.</p>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>1. Introduction</h2>
+            <p>Dirichlet's theorem (1837) states that for coprime integers <em>a</em> and <em>d</em>,
+            the arithmetic progression <em>a, a+d, a+2d, ...</em> contains infinitely many primes.
+            Moreover, the primes are asymptotically equidistributed among the admissible residue classes.</p>
+
+            <figure>
+                <img src="images/prime-spiral.svg" alt="Ulam spiral showing prime distribution patterns">
+                <figcaption>Fig. 1: Ulam spiral visualization of prime positions, colored by residue class mod 6.</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h2>2. Computational Results</h2>
+            <p>We computed prime counts in each residue class mod 6 for primes up to 10<sup>6</sup>.
+            The results confirm equidistribution: classes 1 and 5 (mod 6) each contain approximately
+            half of all primes above 3.</p>
+
+            <table>
+                <thead>
+                    <tr><th>Residue class</th><th>Prime count</th><th>Proportion</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>1 mod 6</td><td>39,266</td><td>0.4998</td></tr>
+                    <tr><td>5 mod 6</td><td>39,263</td><td>0.4998</td></tr>
+                    <tr><td>Other</td><td>3 (primes 2, 3, 5)</td><td>0.0004</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>3. Conclusion</h2>
+            <p>The computational evidence strongly supports equidistribution of primes across
+            admissible residue classes, consistent with the prime number theorem for arithmetic
+            progressions.</p>
+        </section>
+    </main>
+
+    <script src="scripts/table-sort.js"></script>
+</body>
+</html>

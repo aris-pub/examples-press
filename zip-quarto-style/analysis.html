@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thermal Conductivity of Binary Alloys</title>
+    <link rel="stylesheet" href="analysis_files/libs/quarto.css">
+</head>
+<body>
+    <header id="title-block-header">
+        <h1 class="title">Thermal Conductivity of Binary Alloys</h1>
+        <p class="author">Atticus Finch, Jane Eyre</p>
+        <div class="abstract">
+            <h2>Abstract</h2>
+            <p>We present measurements of thermal conductivity across a range of
+            copper-nickel binary alloys at room temperature. The data reveal the
+            characteristic minimum in conductivity at intermediate compositions,
+            consistent with Nordheim's rule for solid-solution scattering.
+            Our results agree with prior literature within 5% across all compositions.</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="introduction">
+            <h2>1. Introduction</h2>
+            <p>Binary alloys exhibit thermal conductivity that depends non-linearly on
+            composition. For solid-solution alloys, disorder scattering reduces the
+            mean free path of heat-carrying phonons and electrons, producing a minimum
+            in conductivity near equiatomic composition.</p>
+        </section>
+
+        <section id="results">
+            <h2>2. Results</h2>
+            <p>Figure 1 shows thermal conductivity as a function of nickel fraction
+            in Cu-Ni alloys. The minimum occurs near 50 at.% Ni, consistent with
+            maximum lattice disorder.</p>
+
+            <figure>
+                <img src="analysis_files/figure-html/conductivity-plot.svg"
+                     alt="Thermal conductivity vs composition for Cu-Ni alloys">
+                <figcaption>Fig. 1: Thermal conductivity of Cu-Ni alloys at 300K.
+                Error bars represent one standard deviation from three measurements.</figcaption>
+            </figure>
+
+            <p>The data follow the Nordheim relation:</p>
+            <p style="text-align: center; font-style: italic;">
+                1/k = 1/k_0 + C * x(1-x)
+            </p>
+            <p>where <em>x</em> is the nickel fraction, <em>k_0</em> is the pure-component
+            conductivity, and <em>C</em> is the Nordheim coefficient.</p>
+        </section>
+
+        <section id="conclusion">
+            <h2>3. Conclusion</h2>
+            <p>The thermal conductivity minimum at intermediate compositions confirms
+            the dominant role of alloy disorder scattering in Cu-Ni solid solutions.</p>
+        </section>
+    </main>
+
+    <script src="analysis_files/libs/quarto.js"></script>
+</body>
+</html>
