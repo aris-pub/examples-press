@@ -129,7 +129,7 @@ simulation shows position vs. time with exponential envelope (underdamped case) 
 phase space trajectories converging to the origin, illustrating
 :ref:stability,the asymptotic stability:: established in Corollary 1.
 
-:html: {
+:figure: {
   :path: damped_oscillator_widget.html
 }
   :caption: Interactive damped oscillator simulation showing position vs. time and phase
