@@ -17,7 +17,7 @@
 } ::
 
 :abstract: {
-  :keywords: {graph embedding, graph Laplacian, simplex geometry}
+  :keywords: graph embedding, graph Laplacian, simplex geometry
 }
 
 Graph embedding seeks to build a low-dimensional representation of a graph $G$. This

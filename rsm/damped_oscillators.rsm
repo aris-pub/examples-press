@@ -15,7 +15,7 @@
 } ::
 
 :abstract: {
-  :keywords: {damped oscillator, differential equations, physics}
+  :keywords: damped oscillator, differential equations, physics
 }
 
 The damped harmonic oscillator extends the simple harmonic oscillator by incorporating
@@ -24,7 +24,7 @@ critically damped, and overdamped—and demonstrates how the damping coefficient
 fundamentally determines system behavior. An interactive simulation enables exploration
 of parameter space, building intuition for this fundamental physical system.
 
-:paragraph: {:class: {press-note, small}} *Example scroll made with RSM Studio for
+:paragraph: {:class: press-note, small} *Example scroll made with RSM Studio for
 Scroll Press.*
 
 ::
@@ -175,5 +175,5 @@ essential for applications from mechanical design to signal processing.
 
 ::
 
-:paragraph: {:class: {press-note, small}} *Example scroll made with RSM Studio for
+:paragraph: {:class: press-note, small} *Example scroll made with RSM Studio for
 Scroll Press.*
