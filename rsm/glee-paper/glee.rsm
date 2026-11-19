@@ -73,7 +73,7 @@ GLEE has deep connections with the so-called simplex geometry of the Laplacian
 observation, which highlights the bijective correspondence between the Laplacian matrix of
 an undirected, weighted graph and a geometric object known as a *simplex*.
 
-:html: {
+:figure: {
   :path: morph.html
   :label: fig-morph
 }
@@ -294,7 +294,7 @@ GLEE embeddings, which can all be thought of as coming from the simplex, in orde
 perform common graph mining tasks. In the following we focus on unweighted, undirected
 graphs.
 
-:html: {
+:figure: {
   :path: fig1_simplex.html
 }
 :caption: Three-dimensional GLEE embeddings of $K_3$ (triangle), $K_4$ (tetrahedron), and
@@ -652,14 +652,14 @@ coefficient, or on any other assumption about graph structure. GLEE's performanc
 datasets `PPI`, `Wiki-Vote` and `caida` point to the excellent potential of our method in
 the case of low clustering coefficient.
 
-:html: {
+:figure: {
   :path: fig2_reconstruction.html
 }
 :caption: Graph reconstruction error (Frobenius norm) for GLEE and LE on the Karate Club
 graph across embedding dimensions. GLEE uses threshold $\hat\theta_c = -0.5$.
 ::
 
-:html: {
+:figure: {
   :path: reconstruction_machine.html
 }
 :caption: **The Reconstruction Machine.** Drag the threshold slider to reconstruct the
@@ -697,14 +697,14 @@ that the hybrid approach of NetMF is ideal for high clustering coefficient, wher
 is a viable option in the case of low clustering coefficient as evidenced by the results
 on `PPI`, `Wiki-Vote` and `caida`.
 
-:html: {
+:figure: {
   :path: fig3_linkpred.html
 }
 :caption: Link prediction AUC for GLEE and LE on the Karate Club graph. GLEE uses
 negative dot product as edge score; LE uses negative Euclidean distance.
 ::
 
-:html: {
+:figure: {
   :path: link_prediction_machine.html
 }
 :caption: **The Link Prediction Machine.** Given the full GLEE embedding of the Karate
@@ -1217,7 +1217,7 @@ We present two other estimators of $\theta_{\text{opt}}$ to accompany the heuris
 $\hat\theta_c = -0.5$ mentioned in Section 3.1.
 
 
-:html: {
+:figure: {
   :path: figA1_dotproducts.html
 }
 :caption: Distribution of pairwise dot products in GLEE embedding space for the Karate
@@ -1322,7 +1322,7 @@ $\mathbf{A}$, we compute the Frobenius norm of the difference between the recons
 adjacency matrix $\hat{\mathbf{A}}$ using each of the three estimators. In Fig. B.1, we
 show our results.
 
-:html: {
+:figure: {
   :path: figB1_estimators.html
 }
 :caption: Reconstruction error with $\hat\theta_c = -0.5$ on Erdos--Renyi ($n = 100$,
